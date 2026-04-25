@@ -1,0 +1,7 @@
+5. A sort is said to be stable if it always leaves values that are considered
+   to be equal in the same order after the sort. How does the algorithm of a stable
+   insertion sort differ from that of a non-stable insertion sort?
+
+A stable insertion sort compares values with <, while a non-stable insertion sort will compare with <=.
+This is because <= will continue moving elements to the left even if they are the same as the elements
+to the left, causing the original order of same consecutive to change.

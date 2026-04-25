@@ -1,0 +1,70 @@
+1. Using the Maze class (discussed in class, which moves to an adjacent
+position in the order south, east, west, north)
+a) Trace the path that would be taken by the method findExitFrom if it is
+using the maze specified in “data.txt”, starting at map[4][6]. Give your
+answer as a sequence of coordinates representing the row and column of
+each location visited – from the starting position (4, 6) to the exit
+position(5, 9).
+
+    0123456789
+   0WWWWWWWWWWW
+   1W...W.W...W
+   2W.W.W.W.WWW
+   3W.W...++++W
+   4W.WWWW+WW+W
+   5W.W-----W+W
+    WWWWWWWWWWW
+
+south, east, north, west
+
+(4, 6)
+(5, 6)
+(5, 7)
+(5, 5)
+(5, 4)
+(5, 3)
+
+(3, 6)
+(3, 7)
+(3, 8)
+(3, 9)
+(4, 9)
+(5, 9)
+
+
+b) Repeat the previous question if the method findExitFrom tried to move
+to an adjacent position in the order east, south, west, north.
+
+    0123456789
+   0WWWWWWWWWWW
+   1W...W.W...W
+   2W.W.W.W.WWW
+   3W.W...++++W
+   4W.WWWW+WW+W
+   5W.W+++++W+W
+    WWWWWWWWWWW
+
+
+(4, 6)
+(5, 6)
+(5, 7)
+(5, 5)
+(5, 4)
+(5, 3)
+
+(3, 6)
+(3, 7)
+(3, 8)
+(3, 9)
+(4, 9)
+(5, 9)
+
+
+
+c) In the findExitFrom method, there is no explicit checking on the index
+out of bound, yet, we never encounter any ArrayOutOfBound exception,
+why? What is the restriction that avoids the exception?
+
+The maze is outlined with walls, meaning the player will always encounter a wall
+when moving too far in any direction, thus stopping any further recursive calls
+in that direction

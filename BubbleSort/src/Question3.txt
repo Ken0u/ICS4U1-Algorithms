@@ -1,0 +1,18 @@
+3. A modification of bubble sort is the cocktail shaker sort in which,
+on odd-numbered passes, large values are carried to the top of the list
+while, on even-number passes, small values are carried to the bottom of
+the list. Make a table to show passes of a cocktail-shaker sort on the
+following data.
+
+2 9 4 6 1 7 8
+2 9 4 1 6 7 8
+2 9 1 4 6 7 8
+2 1 9 4 6 7 8
+1 2 9 4 6 7 8
+
+1 2 4 9 6 7 8
+1 2 4 6 9 7 8
+1 2 4 6 7 9 8
+1 2 4 6 7 8 9
+
+1 2 4 6 7 8 9
